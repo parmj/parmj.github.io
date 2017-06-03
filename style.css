@@ -1,0 +1,142 @@
+*{
+
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+body{
+font-family: "Trebuchet MS";
+  font: 15px/1.5 Open Sans, Arial;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+#navbar ul{
+
+margin: 0;
+padding-top: 0;
+list-style: none;
+  text-align: center;
+  float: center;
+}
+
+#navbar :hover{
+	background-color: green;
+    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+#navbar ul li{
+float: left;
+width: 200px;
+height: 40px;
+background-color: #f4f4f4;
+opacity: .7;
+text-align: center;
+font-size: 20px;
+line-height: 40px;
+margin-right: 4px;
+}
+
+#navbar ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#navbar ul li a: hover {
+	color: green;
+}
+
+/* Global */
+.container{
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+}
+
+header{
+  min-height:150px;
+  background:url('banner2.jpg') no-repeat 0 ;
+  text-align:center;
+  color:#ffffff;
+}
+header h1{
+  margin-top:9px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+header h3{
+font-size:20px;
+}
+header h2{
+	  margin-top:9px;
+	font-size: 30px;
+	  margin-bottom:10px;
+}
+
+
+#images{
+	margin-top: 15px;
+}
+
+#images .slider{
+	padding-top: 5px;
+	float: left;
+  padding:20px;
+  background:url('background.jpg') no-repeat 0 ;
+}
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .icon{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:15px;
+}
+
+#boxes .icon img{
+  width:90px;
+}
+
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#898686;
+  text-align: center;
+}
+
+#boxes .vr-header{
+  min-height: 300px;
+  overflow: scroll;
+  text-align:center;
+  color: #f4f4f4;
+  background:url('background.jpg') ;
+
+}
+
+#boxes .gameinfo{
+  text-align:center;
+  color:rgb(68, 123, 112);
+  
+}
+.gameinfo p{
+	font-size: 20px;
+	    width: 50%;
+}
+
+.vr-header h1{
+	font-size: 70px;
+}
+
+
+
+
+
