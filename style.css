@@ -91,6 +91,7 @@ header h2{
 
 #boxes{
   margin-top:20px;
+  margin-bottom: 20px;
 }
 
 #boxes .icon{
@@ -115,11 +116,13 @@ footer{
 
 #boxes .vr-header{
   min-height: 300px;
-  overflow: scroll;
   text-align:center;
   color: #f4f4f4;
   background:url('background.jpg') ;
 
+}
+#boxes .vr-info{
+    background:url('green-background1.png') ;
 }
 
 #boxes .gameinfo{
