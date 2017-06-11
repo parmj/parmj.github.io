@@ -3,6 +3,19 @@
 <head>
     <title>ParmJohal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       <script>
+        $(document).ready(function() { 
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+            });
+         });
+    </script>
+
 </head>
     <body > 
 
@@ -16,20 +29,21 @@
     </header>
 <div id = "navbar">
     <ul>
-        <li><a href="#ecoapp" style="  color: black;">Android</a></li>
+        <li><a href="#ecoapp" style = "color: black"; >Android</a></li>
         <li><a href="#vrgame" style="  color: black;">VR Game</a></li>
-        <li><a href="" style="  color: black;">C++ Projects</a></li>
+        <li><a style="  color: black;">C++ Projects</a></li>
     </ul>
 </div>
 
 <section id = "images">
     <div class = "slider" style="overflow: scroll;" >
-                    <a name="ecoapp"></a> 
+                    <a id="ecoapp"></a> 
                 <img src="icons/EcotraxTitle.png" style=" height: 10%; width: 45%; padding-left: 300px; padding-right: 300px; padding-top: 20px;">
           <img src="appdemo.gif" height="55%" width="27%" style="float: left; padding: 50px; padding-top: 10px;">
           <p style="text-align: left; padding-top: 80px; color: white; font-size: 25px;"> This app was designed by a group of students in our intro to Software Engineering course at Simon Fraser University. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep rack of their CO2 emissions. </p>  
            <p style="text-align: left; padding-top: 80px; color: white; font-size: 25px;"> This app was designed by a group of students in our intro to Software Engineering course at Simon Fraser University. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep rack of their CO2 emissions. </p>
            <div id="tilt">
+                <img src="icons/code_arrow.png" height="50%" width="15%" style="padding: 10px;" >
                 <a href="https://github.com/parmj/CarbonTracker.git" target="_blank"><img class = "git" src="icons/github.png" height="45%" width="15%" style="padding: 5px; padding-left: 30px"> </a>
                 <img src="icons/sfu.png" height="45%" width="15%" style="padding: 10px;" >
            </div>
@@ -64,7 +78,7 @@
     <div class="container" id = "something">
         <div class="vr-header">
         <hr>
-                <a name="vrgame"></a> 
+                <a id="vrgame"></a> 
                 <img src="icons/VrTitle.png" style=" height: 17%; width: 50%; padding: 40px;">
                     <iframe src="https://drive.google.com/file/d/0Byjtuqi4NRyZeU9tRlpZbUhMdUk/preview" width= 70% height=480px style="float: center;"></iframe>  
         <img src="empty.png" style="width: 1000px">
@@ -73,21 +87,19 @@
         <div class="vr-info">
         <img src="vr-images/santa1.png" height="65%" width="37%" style="float: left; padding: 9px; padding-top: 10px;">
           <p style="text-align: left; padding-top: 80px; color: white; font-size: 20px;"> This app was designed by a group of students in our intro to Software Engineering course at Simon Fraser University. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep rack of their CO2 emissions. </p>  
-
              <img src="vr-images/gamelogic4.png" style=" float: center; height: 40%; width: 65%;
              padding-left: 210px;">
-
         </div>
     </div>
 </section>
 
 <section id = "hackathon">
     <div class="header">
-        <img src="hackathon/hackathon-header.png">
+        <img src="hackathon/hackathon-header.png" style="padding-bottom: 0px;">
     </div>
 
     <div class="hackathon-body">
-        <img src="hackathon/groupphoto1.jpg" height="65%" width="37%" style="float: left; padding: 30px; padding-bottom: 100px;">
+        <img src="hackathon/groupphoto1.jpg" height="65%" width="37%" style="float: left; padding: 30px; padding-bottom: 100px; ">
           <p style="text-align: left; padding-top: 80px; color: white; font-size: 20px;"> This app was designed by a group of students in our intro to Software Engineering course at Simon Fraser University. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep rack of their CO2 emissions. </p>
                   <img src="empty.png" style="width: 100%" >
 
@@ -98,6 +110,7 @@
 <footer>
     <p>Parmvir Johal Personal Projects, Copyright &copy; 2017</p>
 </footer>
+
     </body>
 </html>
 
