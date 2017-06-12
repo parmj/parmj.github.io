@@ -3,18 +3,6 @@
 <head>
     <title>ParmJohal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-          <script src="htpps://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-       <script type="text/javascript" >
-        $(document).ready(function() { 
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-            });
-         });
-    </script>
 
 </head>
     <body > 
@@ -142,6 +130,20 @@
     <p>Parmvir Johal Personal Projects, Copyright &copy; 2017</p>
 </footer>
 
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       <script >
+        $(document).ready(function() { 
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+            });
+         });
+    </script>
+    
     </body>
 </html>
 
