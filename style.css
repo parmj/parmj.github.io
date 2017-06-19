@@ -12,7 +12,7 @@ font-family: "Trebuchet MS";
   font: 15px/1.5 Open Sans, Arial;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color:#eee;
 }
 
 #navbar ul{
@@ -25,9 +25,10 @@ list-style: none;
 }
 
 #navbar :hover{
-	background-color: green;
+	background-color: rgb(92, 66, 244);
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
     transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    font-size: 25px;
 }
 #navbar ul li{
 float: left;
@@ -220,5 +221,8 @@ footer{
   box-shadow: 0 0 30px #ccc; 
 }
 
+.shadowfilter  {
+  -webkit-filter: drop-shadow(0px 0px 20px purple);
+}
 
 
