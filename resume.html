@@ -1,0 +1,64 @@
+
+
+ <!doctype html>
+<html>
+<head>
+    <title>ParmJohal</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="icon" type="image/ico" href="tabicon.ico">
+</head>
+
+<body>
+    <div id="image">
+        <img src="contact/goku.jpg">
+        <h1>Parm Johal</h1>
+        <p>Third Year Software Systems Student</p>
+    </div>
+    <div id="content">
+        
+        <h1>Work Experience</h1>
+        <div class="row" >
+            <div class="work">
+                <img src="workimages/lg.png">
+                <p>At KnewSales I worked as a temporary sales rep for LG electronics selling their latest 4K TV’s, and training the workers I was assigned at specific stores about their new technology. <br><br>
+                • At this role I learned the importance of individual work, because on the field I was alone and had to report to my manager located in down town Vancouver. <br>
+                • Meeting and exceeding expectations was a priority at this role, since their was a third party company
+                </p>
+            </div>
+        </div>
+
+        <div class="row" >
+            <div class="work">
+                <img src="workimages/bestbuy.png">
+                <p>At BestBuy I started of as a cashier, but after 2 weeks of work I was later on promoted to the role of a customer service rep. <br><br>
+                • Learned excellent communication skills talking to customers <br>
+                • Hands-on experience with keeping track of and filing important documents involving confidential
+                information <br>
+                • Gained experience working with others to meet goals set by the management every month
+                </p>
+            </div>
+        </div>
+
+</body>
+
+<footer id ="footer">
+    <div class="footer-images">
+        <img src="contact/email.png">
+        <img src="contact/LinkedIn.png">
+        <img src="contact/gmail.png">
+    </div>
+    <p>&copy; 2017 ParmJohal</p>
+
+</footer>
+<script type="text/javascript">
+    var ypos,image;
+    function parallex() {
+        image = document.getElementById('image');
+        ypos = window.pageYOffset;
+        image.style.top = ypos * .7+ 'px';
+    }
+    window.addEventListener('scroll', parallex),false;
+
+</script>
+
+</html>
