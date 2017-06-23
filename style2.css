@@ -99,9 +99,8 @@ font-family: "Trebuchet MS";
 #content h1{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: black;
-	padding: 7px;
-		padding-left: 50px;
-
+	padding: 10px;
+	padding-left: 50px;
 	font-size: 300%;
 }
 
