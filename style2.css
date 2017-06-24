@@ -23,13 +23,20 @@ font-family: "Trebuchet MS";
     z-index: 1;
 }
 
+.intro {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 #image img{
     display: block;
 	margin: 0 auto;
 	padding:50px;
 	padding-bottom: 10px;
-	border-radius: 50%;
-	width: 23%;
+	width: 30%;
 }
 
 #image h1{
