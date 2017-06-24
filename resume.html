@@ -9,6 +9,15 @@
 </head>
 
 <body>
+        <div class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="#skills">Skills</a>
+                <a href="#work">Work Experience</a>
+                <a href="#footer"><span>About Me</span></a>
+            </div>
+        </div>
 
     <div id="image">
         <img src="contact/goku.jpg">
@@ -17,8 +26,8 @@
     </div>
     <div id="content">
         <div class="skills">
-        <h1>Technical Skills</h1>
-
+        <a id="skills"></a>
+        <h1 >Technical Skills</h1>
            <h3>Languages</h3>
             <ul>
                 <li> • JAVA </li>
@@ -57,6 +66,8 @@
 
     <h1 style="padding-top: 100px;">Work Experience</h1>
         <div class="row" >
+             <a id="work"></a>
+
             <div class="work">
                 <img src="workimages/lg.png">
                 <p>At KnewSales I worked as a temporary sales rep for LG electronics selling their latest 4K TV’s, and training the workers I was assigned at specific stores about their new technology. <br><br>
@@ -101,6 +112,20 @@
     <p>&copy; 2017 ParmJohal</p>
 
 </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       <script >
+        $(document).ready(function() { 
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+            });
+         });
+    </script>
+
 <script type="text/javascript">
     var ypos,image;
     function parallex() {
