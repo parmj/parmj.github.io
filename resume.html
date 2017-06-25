@@ -6,18 +6,32 @@
     <title>ParmJohal</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="icon" type="image/ico" href="tabicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 </head>
 
 <body>
-        <div class="nav">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a href="#skills">Skills</a>
-                <a href="#work">Work Experience</a>
-                <a href="#footer"><span>About Me</span></a>
-            </div>
-        </div>
+
+<script>
+    jQuery('body').css('display','none');
+    jQuery(document).ready(function() {
+        jQuery('body').fadeIn();
+        jQuery('a').on('click',function(event){
+            var thetarget = this.getAttribute('target')
+            if (thetarget != "_blank"){         
+                var thehref = this.getAttribute('href')
+                event.preventDefault();
+                jQuery('body').fadeOut(function(){
+                    //alert(thehref)
+                    window.location = thehref                   
+                });
+            }
+        });
+    });
+    setTimeout(function(){
+        jQuery('body').fadeIn();
+    },1000)
+</script>
 
     <div id="image">
         <img src="empty.png" style="width: 100%; height: 5px;" >
@@ -29,6 +43,15 @@
         </div>
     </div>
     <div id="content">
+         <div class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="#skills">Skills</a>
+                <a href="#work">Work Experience</a>
+                <a href="projects.html"><span>My Projects</span></a>
+            </div>
+        </div>
         <div class="skills">
         <a id="skills"></a>
         <h1 >Technical Skills</h1>
@@ -104,6 +127,7 @@
             </div>
         </div>
 
+
 </body>
 
 <footer id ="footer">
@@ -115,8 +139,6 @@
     <p>&copy; 2017 ParmJohal</p>
 
 </footer>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
        <script >
         $(document).ready(function() { 
             $('a[href^="#"]').on('click', function(event) {
@@ -139,5 +161,15 @@
     window.addEventListener('scroll', parallex),false;
 
 </script>
+<script type="text/javascript">
+    var elementPosition = $('.nav').offset();
 
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 520) {
+            $('.nav').css('position', 'fixed').css('top', '0');
+        } else {
+            $('.nav').css('position', 'relative');
+        }
+     });
+</script>
 </html>

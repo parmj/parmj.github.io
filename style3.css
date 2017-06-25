@@ -122,11 +122,6 @@ label {
 }
 
 
-/*
-****************************************************************************************************************************
-****************************************************************************************************************************
-*/
-
 #content {
     width: 100%;
     margin-top:-10px; 
@@ -135,56 +130,12 @@ label {
     z-index: 1;
 }
 
-.skills {
-	background-color: #e07366;
-	padding-bottom: 20px;
-	float: left;
-	width: 100%
-}
-
-.skills h3 {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	color: white;
-	padding-left: 70px;
-	font-size: 170%;
-}
-.skills ul{
-	float: left;
-	list-style: none;
-	padding: 50px;
-	padding-top: 10px;
-
-}
-
-.skills li {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	font-size: 120%;
-}
-
-
-#content h1{
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	color: black;
-	padding: 10px;
-	padding-left: 50px;
-	font-size: 250%;
-
-}
-
-.git  {
-	width:12%;
-	padding-left: 50px;
-  padding-bottom: 50px;
-
-}
-.git_arrow{
-		width:12%;
-    padding-left: 50px;
-	padding-left: 50px;
-  padding-bottom: 50px;
-}
-
-.git {
+/*
+****************************************************************************************************************************
+****************************************************************************************************************************
+*/
+/*TILT*/
+#tilt .git {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -192,7 +143,7 @@ label {
           transition: all 0.5s ease;
 }
  
- .git:hover {
+#tilt .git:hover {
   -webkit-transform: rotate(-10deg);
      -moz-transform: rotate(-10deg);
        -o-transform: rotate(-10deg);
@@ -201,38 +152,136 @@ label {
 }
 
 
-.work{
-	  width: 97%;
+#images .slider{
+  float: left;
+  padding:20px;
+  background:url('polygon.jpg') no-repeat 0 ;
+
+}
+
+#boxes{
+  margin-top:20px;
+  margin-bottom: 5px;
+  background-color: #eee;
+}
+
+.icon {
+    background-color: #eee;
+    color: black;
+
+}
+#boxes .icon{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:21px;
+}
+
+#boxes .icon img{
+  width:90px;
+}
+
+
+#boxes .vr-header{
+  min-height: 300px;
+  text-align:center;
+  color: #f4f4f4;
+/*  background-color: #B22222 ;
+*/
+    background:url('red-background.jpg') ;
+
+}
+#boxes .vr-info{
+    background:url('tree1.png') ;
+}
+
+#boxes .gameinfo{
+  text-align:center;
+  color:rgb(68, 123, 112);
+  
+}
+.gameinfo p{
+  font-size: 20px;
+      width: 50%;
+}
+
+.vr-header h1{
+  font-size: 70px;
+}
+
+.header img{
+  width: 100%;
+
+}
+.hackathon-body {
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('hackathon/sfusurrey.jpg');
+     background-size: 100% 120%;
+
+}
+
+.background_image {
+  background-image: url('icons/code/keyboard.gif') ;
+  background-size: 100%, 100%;
+}
+
+.content h1{
+  font-size: 55px;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.content h2{
+  font-size: 40px;
+  color: #f4f4f4;
+  text-align: center;
+}
+.content h3{
+  font-size: 20px;
+  color: green;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+.codeimage{
+    width: 35%;
     margin: 10px;
     background-color: white;
     display: inline-block;
 }
-.work p{
-	float: left;
-    font-size: 120%;
+.codeimage p{
+    font-size: 18px;
     padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
     text-align: left;
     line-height: 28px;
-    color: black;
-    width: 60%
 }
 
-.work img{
-  float: left;
+.codeimage img{
   width: 100%;
   height: 100%;
-  max-height: 250px;
-  max-width: 250px;
-  padding: 30px;
+  max-height: 350px;
+  max-width: 350px;
+  padding-left: 30px;
 }
 
-.work:hover{
+.codeimage:hover{
   -moz-box-shadow: 0 0 15px #ccc;
   -webkit-box-shadow: 0 0 15px #ccc;
   box-shadow: 0 0 30px #ccc; 
 }
+
+.shadowfilter  {
+  -webkit-filter: drop-shadow(0px 0px 20px purple);
+}
+
+/*
+****************************************************************************************************************************
+****************************************************************************************************************************
+*/
+
+
 
 
 footer{
