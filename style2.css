@@ -55,8 +55,6 @@ font-family: "Trebuchet MS";
 }
 
 
-
-
 /*
 ****************************************************************************************************************************
 ****************************************************************************************************************************
@@ -102,11 +100,18 @@ label {
     label {
         display: block;
         cursor: pointer;
+        color: #54D17A;
+    }
+    #image {
+      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('red-background.svg');
+
     }
     .menu {
         text-align: center;
         width: 100%;
         display: none;
+        background-color: white;
+
     }
     .menu a {
         display: block;
