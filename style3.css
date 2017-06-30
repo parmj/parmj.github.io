@@ -160,7 +160,8 @@ label {
 #images .slider{
   float: left;
   padding:20px;
-  background:url('polygon.jpg') no-repeat 0 ;
+  /*background:url('polygon.jpg') no-repeat 0 ;*/
+  background-color:  #3b5998;
 
 }
 
@@ -191,9 +192,10 @@ label {
   min-height: 300px;
   text-align:center;
   color: #f4f4f4;
-/*  background-color: #B22222 ;
+/*    background:url('red-background.svg') ;
 */
-    background:url('red-background.svg') ;
+
+  background-color:  #3b5998;
 
 }
 #boxes .vr-info{
