@@ -17,7 +17,7 @@ font-family: "Trebuchet MS";
     height: 500px;
     min-height: 550px;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('vancouver.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('backgrounds/lighthouse.jpg');
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     position: relative;
@@ -141,7 +141,7 @@ label {
 }
 
 .skills {
-	background-color: #e07366;
+	background-color:  /*#8368c2*/  /*#6f68c2*/ #68c28c;
 	padding-bottom: 20px;
 	float: left;
 	width: 100%
