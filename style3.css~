@@ -163,8 +163,7 @@ label {
   float: left;
   padding:20px;
   /*background:url('polygon.jpg') no-repeat 0 ;*/
-/*  background-color:  #3b5998;
-*/
+  background-color:  #3b5998;
 background: #57b297; /* Old browsers */
 background: -moz-linear-gradient(top,  #57b297 0%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #57b297 0%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
@@ -204,14 +203,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 /*    background:url('red-background.svg') ;
 */
 
-/*  background-color:  #3b5998;*/
-
-background: #57b297; /* Old browsers */
-background: -moz-linear-gradient(top,  #57b297 0%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #57b297 0%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #57b297 0%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-
+  background-color:  #3b5998;
 
 }
 #boxes .vr-info{
