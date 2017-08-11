@@ -12,7 +12,12 @@ font-family: "Trebuchet MS";
 }
 
 
+body {
 
+	width: 1280px;
+	display: block;
+    margin: 0 auto;
+}
 #image {
     height: 500px;
     min-height: 550px;
@@ -126,6 +131,10 @@ label {
     #toggle:checked + .menu {
         display: block;
     } 
+
+    iframe {
+      height: 100%;
+    }
     
 }
 
@@ -184,7 +193,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 .icon {
     background-color: #eee;
     color: black;
-
 }
 #boxes .icon{
   float:left;
@@ -194,7 +202,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 }
 
 #boxes .icon img{
-  width:90px;
+  width:20%;
 }
 
 
@@ -216,7 +224,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 
 }
 #boxes .vr-info{
-    background:url('tree1.png') ;
+/*    background:url('tree1.png') ;
+*/
+background-color: #207cca;
 }
 
 #boxes .gameinfo{
@@ -238,8 +248,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 
 }
 .hackathon-body {
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('hackathon/sfusurrey.jpg');
-     background-size: 100% 120%;
+/*     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('hackathon/sfusurrey.jpg');
+     background-size: 100% 120%;*/
+
+     background-color: #262626;
 
 }
 
@@ -255,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57b297', end
 }
 
 .content h2{
-  font-size: 40px;
+  font-size: 100%;
   color: #f4f4f4;
   text-align: center;
 }

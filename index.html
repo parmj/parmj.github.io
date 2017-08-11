@@ -25,7 +25,6 @@
             }
             .fly-in-text li {
                 display: inline-block;
-                margin-right: 40px;
                 font-family: Open Sans, Arial;
                 font-weight: 300;
                 font-size: 400%;
@@ -47,6 +46,13 @@
             .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
             .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
             
+            @media only screen and (max-width: 1195px) {
+
+                .fly-in-text li {
+                    font-size: 150%;
+                    margin: 1px;
+                }
+            }
             a {
                 color: white;
                 font-size: 20px;
@@ -54,7 +60,7 @@
                 border: 1px solid #f5f5f5;
                 border-radius: 5px;
                 display: inline-block;
-                width: 200px;
+                width: 30%;
                 padding: 8px;
                 margin: 10px;
                 font-size: 2em;

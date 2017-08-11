@@ -9,8 +9,10 @@ font-family: "Trebuchet MS";
   color: white;
   background-color:#eee;
   position: relative;
+    width: 1280px;
+  display: block;
+    margin: 0 auto;
 }
-
 
 
 #image {
