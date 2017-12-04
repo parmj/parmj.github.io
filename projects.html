@@ -1,226 +1,73 @@
-
-
- <!doctype html>
+<!doctype html>
 <html>
 <head>
-    <title>ParmJohal</title>
-    <link rel="stylesheet" type="text/css" href="style3.css">
-    <link rel="icon" type="image/ico" href="tabicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects</title>
+<link href="CSS/projects.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<script>
-    jQuery('body').css('display','none');
-    jQuery(document).ready(function() {
-        jQuery('body').fadeIn();
-        jQuery('a').on('click',function(event){
-            var thetarget = this.getAttribute('target')
-            if (thetarget != "_blank"){         
-                var thehref = this.getAttribute('href')
-                event.preventDefault();
-                jQuery('body').fadeOut(function(){
-                    //alert(thehref)
-                    window.location = thehref                   
-                });
-            }
-        });
-    });
-    setTimeout(function(){
-        jQuery('body').fadeIn();
-    },1000)
-</script>
 
-    <div id="image" title="BG img:  nicolascrepnek.com">
-        <img src="empty.png" style=" height: 5px;" >
-        <div class="intro">
-             <img src="contact/portrait2.png">
-            <h1>Parm Johal</h1>
-            <p>Third Year Software Systems Student</p> 
-        </div>
-    </div>
-    <div id="content">
-    <div class="nav">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a href="#ecoapp">Android</a>
-                <a href="#vrgame">VR Game</a>
-                <a href="#hackathon">Hackathon</a>
-                <a href="#code_example">Sample Code</a>
-                <a href="resume.html"><span>Resume </span></a>
-            </div>
-        </div>
-    
-    <section id = "images">
-    <div class = "slider" style="overflow: scroll;" >
-            <a id="ecoapp"></a> 
-            <img src="icons/EcotraxTitle.png" style=" height: 10%; width: 45%; padding-top: 20px;   display: block;
-  margin: 0 auto; ">
-          <img src="appdemo4.gif" height="65%" width="47%" style="float: left; padding-top: 10px;">
-          <p style="text-align: left; padding-top: 50px; color: white; font-size: 150%;"> This app was designed by a group of students in our intro to Software Engineering course at Simon Fraser University. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep track of their CO2 emissions. </p>  
-           <p style="text-align: left; padding-top: 50px; color: white; font-size: 150%;"> 
-              This project taught me the importance of using an <b>Agile</b> and <b>Scrum</b> methodologies. With weekly meetings and constant feedback of team members, it allowed us to create a complete project in a <b>timely manner</b>.
-           </p>
-           <div id="tilt">
-                <img src="icons/code_arrow.png" height="50%" width="15%" style="padding: 10px;" >
-                <a href="https://github.com/parmj/CarbonTracker.git" target="_blank"><img class = "git" src="icons/github.png" height="45%" width="15%" style="padding: 5px; padding-left: 30px"> </a>
-                <img src="icons/sfu.png" height="45%" width="15%" style="padding: 10px;" >
-           </div>
-            </div>
+<section class="home-hero parallax--bg">
+	<div class="container">
+		<img src="/Users/ParmJohal/Desktop/portfolioV2/images/portrait2.png" 
+		style="    display: block;
+	    margin: 0 auto;
+	    width: 30%;"
 
-</section>
-<section id ="boxes">
-    <div class="container">
+	    ></img>
+		<h1 class="title parallax--box">Parmvir Johal <span>3rd Year Comp Sci student at SFU</span>
+		</h1>
+<!-- 		<a href="" class="button button-accent">See Our Work</a>
+ -->
+		<div class="arrow"></div>
 
-        <div class="icon">
-          <img src="icons/android_studio.png">
-          <h2>Android Studio</h2>
-          <p> Designed using Android Studio </p>
-        </div>
-
-        <div class="icon">
-          <img src="icons/java.png">
-          <h2>Java</h2>
-          <p>Implemented using Java </p>
-        </div>
-
-        <div class="icon">
-          <img src="icons/gitab1.png">
-          <h2>GitLab</h2>
-          <p>Organized with the help of GitLab </p>
-        </div>
-
-    </div>
+	</div>
 </section>
 
-<section id = boxes>
-    <div class="container" id = "something">
-        <div class="vr-header">
-        <hr>
-                <a id="vrgame"></a> 
-                <img src="icons/VrTitle.png" style=" height: 17%; width: 50%; padding: 40px;">
-                    <iframe src="https://drive.google.com/file/d/0Byjtuqi4NRyZeU9tRlpZbUhMdUk/preview" width= 70% height=480px style="float: center;"></iframe>  
-                <img src="vr-images/gamelogic4.png" style=" float: center; height: 40%; width: 65%;">
-        </div>
 
-        <div class="vr-info">
-        <img src="vr-images/santa1.png" height="65%" width="37%" style="float: left; padding: 9px; padding-top: 10px;">
-          <p style="text-align: left; padding: 20px; padding-top: 80px; color: white; font-size: 150%;"> Poor working conditions and long hours have pushed the elves to plot a rebellion against Santa. Santa is thrown in a workshop dungeon where he has to complete the challenge in each room to unlock the next, and eventually, escape the workshop to deliver the gifts on time. <br><br>
+<section class="portfolio">
+	<h1>Some of My Work</h1>
 
-          With the trend of VR gaming, me and my friends decided to work on a fun game that was mobile friendly. We were interested with the idea of implementing a game designed for Google cardboard. Being one of the cheapest choices of headsets it would be easily used by others.
-           </p>  
-            <div id="tilt">
-                <img src="icons/code_arrow.png" height="50%" width="15%" style="padding: 10px;" >
-                <a href="https://github.com/parmj/VrGame.git" target="_blank"><img class = "git" src="icons/github.png" height="45%" width="15%" style="padding: 30px; padding-top: 10px; padding-left: 30px"> </a>
-           </div>
-        </div>
-    </div>
+	<!-- portfolio item 01 -->
+	<figure class="port-item">
+		<img src="/Users/ParmJohal/Desktop/portfolioV2/images/projects-thumbnail/airport_sql.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 02 -->
+	<figure class="port-item">
+		<img src="/Users/ParmJohal/Desktop/portfolioV2/images/projects-thumbnail/imacMaze.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 03 -->
+	<figure class="port-item">
+		<img src="/Users/ParmJohal/Desktop/portfolioV2/images/projects-thumbnail/terminal-chat.png" alt="portfolio item" ">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+
 </section>
 
-<section id = "hackathon">
-    <div class="header">
-        <img src="hackathon/hackathon-header.png" style="padding-bottom: 0px;">
-    </div>
 
-    <div class="hackathon-body">
-        <img src="hackathon/groupphoto1.jpg" height="65%" width="37%" style="float: left; padding: 30px; padding-top: 80px; ">
-          <p style="text-align: left; padding-top: 80px; color: white; font-size: 20px;"> With no experience of making any viable applications me and my friends decided to participate in this fun competition that allowed us to innovate an app to help your in your daily life. <br><br>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 
-          From experience, it is difficult for students to keep track of their constant purchases. So we decided to create a unique and easy way to keep track of your spending. <br><br>
-
-          Designed with an SQL backend database we created a simple android app. It did not turn out to be the prettiest app, however all the back end framework was done.
-          </p>
-           <div id="tilt">
-                <img src="icons/code_arrow.png" height="50%" width="15%" style="padding: 10px;" >
-                <a href="https://github.com/parmj/hackathon2017.git" target="_blank"><img class = "git" src="icons/github.png" height="45%" width="15%" style="padding: 30px; padding-left: 30px"> </a>
-           </div>
-     </div>
-</section>
-
-<b></b>
-<section id ="code_example" style="padding-top: 10px;">
-    <div class="background_image">
-        <div class="content">
-            <img src="empty.png" style="width: 100%" >
-            <h1>Sample Code</h1>
-            <h2> <b> C++, C, Java, SQL and Python </b> </h2>
-            <h3>(Click to see source code)</h3>
-            <img src="empty.png" style="width: 100%" >
-        </div>
-    </div>
-
-    <div class="row" >
-        <div class="codeimage">
-            <a href="https://github.com/parmj/MazeGame.git" target="_blank">
-                <img src="icons/code/imacMaze.png">
-            </a>
-            <p> <b>Java -</b> Random Generating Maze game</p>
-        </div>
-        <div class="codeimage">
-            <a href="https://github.com/parmj/airport_sql.git" target="_blank">
-                <img src="icons/code/airport_sql.png">
-            </a>
-            <p> <b>SQL & Python -</b> Airport Database</p>
-        </div>
-    </div>
-
-     <div class="row" >
-        <div class="codeimage">
-            <a href="https://github.com/parmj/s-talk.git" target="_blank">
-                <img src="icons/code/s-talk.png" style="padding: 20px;">
-            </a>
-            <p> <b>C -</b> Terminal Chat</p>
-        </div>
-    </div>
-    
-</section>
-                    
-    </div>
+		<script src="lib/parallax.js"></script>
+			<script src="lib/loadingAnimation.js"></script>
 
 </body>
-
-<footer id ="footer">
-    <div class="footer-images">
-        <a href="mailto:parmj@sfu.ca" target="_blank" title="SFU email"><img src="contact/email.png"></a>
-        <a href="https://www.linkedin.com/in/parmvir-johal-456620133" target="_blank" title="Linkedin"><img src="contact/LinkedIn.png"></a>
-        <a href="mailto:parmj09@gmail.com" target="_blank" title="Gmail"><img src="contact/gmail.png"></a>
-    </div>
-    <p>&copy; 2017 ParmJohal</p>
-
-</footer>
-       <script >
-        $(document).ready(function() { 
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-            });
-         });
-    </script>
-
-<script type="text/javascript">
-    var ypos,image;
-    function parallex() {
-        image = document.getElementById('image');
-        ypos = window.pageYOffset;
-        image.style.top = ypos * .7+ 'px';
-    }
-    window.addEventListener('scroll', parallex),false;
-
-</script>
-<script type="text/javascript">
-    var elementPosition = $('.nav').offset();
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 520) {
-            $('.nav').css('position', 'fixed').css('top', '0');
-        } else {
-            $('.nav').css('position', 'relative');
-        }
-     });
-</script>
 </html>
