@@ -200,7 +200,7 @@ p:last-of-type {
 =================== */
 
 .home-hero {
-	background-image: url(/Users/ParmJohal/Desktop/portfolioV2/images/purple.png);
+	background-image: url("images/purple.png");
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
