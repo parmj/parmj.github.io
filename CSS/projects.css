@@ -212,6 +212,23 @@ p:last-of-type {
 	}
 }
 
+/* Work Experience
+=================== */
+.work {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.work img {
+	width: 10%;
+	float: left;
+}
+
+.work p {
+	float: left;
+	padding: 100px;
+	padding-top: 25px;
+}
+
 /* portfolio
 =================== */
 
@@ -315,8 +332,6 @@ section.modal.overlay {
 }
 section.modalWindow section.modalWrapper {
     margin: 30px;
-    border: 1px solid #DADADA;
-    padding: 15px;
     text-align: left;
     line-height: 20px !important;
   	height: 75%;
