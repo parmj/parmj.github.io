@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects</title>
-<link href="CSS/projects.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<link href="CSS/projects.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="dropdown/nice-select.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,32 +31,42 @@
 
 <section class="portfolio">
 	<h1 id="test">Some of My Work</h1>
+	<form>
+		<select class="event-type-select">
+		  <option value="all">All Languages</option>
+		  <option value="python">Python</option>
+		  <option value="Java">Java</option>
+		  <option value="C">C</option>
+		</select>
+	</form>
+	<div style="width: 100%; height: 50px;"></div>
+
 	<!-- portfolio item 01 -->
-	<figure class="port-item">
+	<div class="port-item" data-eventtype="python">
 		<img src="images/projects-thumbnail/airport_sql.png" alt="portfolio item">
 		<figcaption class="port-desc">
 			<p>Project title</p>
 			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupOne">Project details</a>
 		</figcaption>
-	</figure>
+	</div>
 
 	<!-- portfolio item 02 -->
-	<figure class="port-item">
+	<div class="port-item" data-eventtype="Java">
 		<img src="images/projects-thumbnail/imacMaze.png" alt="portfolio item">
 		<figcaption class="port-desc">
 			<p>Project title</p>
 			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupTwo">Project details</a>
 		</figcaption>
-	</figure>
+	</div>
 
 	<!-- portfolio item 03 -->
-	<figure class="port-item">
+	<div class="port-item" data-eventtype="C">
 		<img src="images/projects-thumbnail/terminal-chat.png" alt="portfolio item" ">
 		<figcaption class="port-desc">
 			<p>Project title</p>
 			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupThree">Project details</a>
 		</figcaption>
-	</figure>
+	</div>
 
 </section>
 
@@ -89,6 +101,25 @@
 	<a class="closeBtn">CLOSE X</a>
 </section>
  <!-- END Project Popup's --> 
+ 	<div style="width: 100%; height: 300px;"></div>
+
+
+<div class="container-fluid navbar-fixed-bottom" id="contact-bar">
+  <ul class="list-inline text-center">
+    <li>
+      <a href="#"><i class="fa fa-envelope rotate"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-behance-square"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-codepen"></i></a>
+    </li>
+  </ul>
+</div>
 
 
 <script
@@ -100,6 +131,15 @@
 		<script src="lib/popup.js"></script>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="lib/scroll.js"></script>
+		<script src="lib/filter.js"></script>
+		<script src="dropdown/jquery.nice-select.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('select').niceSelect();
+			});
+
+		</script>
 
 
 </body>

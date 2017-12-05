@@ -20,7 +20,7 @@ img {
 /*  ARROW  */
 
 .arrow {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   margin-left:-20px;
@@ -221,6 +221,7 @@ p:last-of-type {
 .portfolio h1 {
 	size: 200px;
 	padding: 50px;
+	padding-bottom: 20px; 
 }
 
 .port-item {
@@ -321,6 +322,31 @@ section.modalWindow section.modalWrapper {
     cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
+/* FOOTER*/
+
+#contact-bar {
+	padding-top: 50px;
+}
 
 
+#contact-bar a {
+size: 100px;
+  color: black;
+  text-decoration: none;
+}
+
+#contact-bar ul li{
+  padding:20px;
+  font-size: 200%;
+  list-style: none;
+  display: inline;
+}
+
+#contact-bar a:hover{
+  color:purple;
+}
 
