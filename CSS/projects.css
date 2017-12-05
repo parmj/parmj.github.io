@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	background-color: #f7fffd;
 }
 
 img {
@@ -228,6 +229,10 @@ p:last-of-type {
 	margin: 0;
 	position: relative;
 	padding: 20px;
+	height: 300px;
+/*	border: 0.5px solid rgba(0, 255, 108,0.3)*/
+	border: 0.5px solid rgba(146, 66, 244,0.2)
+
 }
 
 .port-item img {
@@ -278,8 +283,8 @@ p:last-of-type {
 @charset "utf-8";
 
 section.modal {
+	position: fixed;
     display: none;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 998;
@@ -287,7 +292,7 @@ section.modal {
 section.modalWindow {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 5%;
     left: 50%;
     z-index: 999 !important;
     width: 600px;
@@ -296,6 +301,7 @@ section.modalWindow {
     background: #FFF;
     cursor: default;
 }
+
 section.modal.overlay {
     display: none;
     position: fixed;
@@ -313,28 +319,80 @@ section.modalWindow section.modalWrapper {
     padding: 15px;
     text-align: left;
     line-height: 20px !important;
-  height: 300px;
+  	height: 75%;
 }
 .closeBtn {
     position: absolute;
     right: 10px;
     top: 6px;
     cursor: pointer;
+    padding: 5px;
+}
+
+.closeBtn:hover{
+	background-color: rgb(146, 66, 244);
+	color: white;
 }
 
 .hidden {
   display: none;
 }
 
+
+/**************************
+    Git Link Animation
+**************************/
+.gitLink {
+  position: relative;
+  width: 25%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(146, 66, 244);
+   border-radius: 50%;
+
+}
+.gitLink:hover .overlay2 {
+  opacity: 1;
+  position: absolute;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 /* FOOTER*/
 
 #contact-bar {
-	padding-top: 50px;
+    bottom: 0px;
+    width: 100%;
 }
 
 
 #contact-bar a {
-size: 100px;
+  size: 100px;
   color: black;
   text-decoration: none;
 }
@@ -347,6 +405,6 @@ size: 100px;
 }
 
 #contact-bar a:hover{
-  color:purple;
+  color:rgb(146, 66, 244);
 }
 

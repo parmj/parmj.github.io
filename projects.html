@@ -34,19 +34,37 @@
 	<form>
 		<select class="event-type-select">
 		  <option value="all">All Languages</option>
-		  <option value="python">Python</option>
+		  <option value="python">Python/SQL</option>
 		  <option value="Java">Java</option>
 		  <option value="C">C</option>
+		  <option value="C#">C#</option>
+
 		</select>
 	</form>
 	<div style="width: 100%; height: 50px;"></div>
 
 	<!-- portfolio item 01 -->
+
+	<div class="port-item" data-eventtype="C#">
+		<img src="images/projects-thumbnail/vrGame.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title1</p>
+			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupOne">Project details</a>
+		</figcaption>
+	</div>
+	<div class="port-item" data-eventtype="Java">
+		<img src="images/projects-thumbnail/ecotrax.gif" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title1</p>
+			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupTwo">Project details</a>
+		</figcaption>
+	</div>
+
 	<div class="port-item" data-eventtype="python">
 		<img src="images/projects-thumbnail/airport_sql.png" alt="portfolio item">
 		<figcaption class="port-desc">
-			<p>Project title</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupOne">Project details</a>
+			<p>Project title1</p>
+			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupThree">Project details</a>
 		</figcaption>
 	</div>
 
@@ -70,23 +88,41 @@
 
 </section>
 
+
+
  <!-- Project Popup's --> 
 <section class="modal modalWindow" id="popupOne">  
 	<section class="modalWrapper">
-		<h2>Modal Popup </h2>
-		<p></p>
-		
+		<h2>Vr Game </h2>
+		<iframe src="https://drive.google.com/file/d/0Byjtuqi4NRyZeU9tRlpZbUhMdUk/preview" style="width: 100%;"></iframe>  
+
+		<p> 
+		With the trend of VR gaming, me and my friends decided to work on a fun game that was mobile friendly. We were interested with the idea of implementing a game designed for Google cardboard. Being one of the cheapest choices of headsets it would be easily used by others.
+
+		</p>
+
+
+	<div class="gitLink">
+  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
+
+  	<a href="github.com" >
+		 <div class="overlay2">
+		    <div class="text">See Code</div>
+		  </div>
+		</div>
+	</a>
+	
 	</section>
-	<a class="closeBtn">CLOSE X</a>
+	<a class="closeBtn">CLOSE (X)</a>
 </section>
 <section class="modal overlay"></section>
+
 
 
 <section class="modal modalWindow" id="popupTwo">  
 	<section class="modalWrapper">
 		<h2>Modal Popup 2</h2>
 		<p></p>
-		
 	</section>
 	<a class="closeBtn">CLOSE X</a>
 </section>
@@ -101,9 +137,9 @@
 	<a class="closeBtn">CLOSE X</a>
 </section>
  <!-- END Project Popup's --> 
- 	<div style="width: 100%; height: 300px;"></div>
+ 	<div style="width: 100%; height: 650px;"></div>
 
-
+<footer>
 <div class="container-fluid navbar-fixed-bottom" id="contact-bar">
   <ul class="list-inline text-center">
     <li>
@@ -119,7 +155,8 @@
       <a href="#"><i class="fa fa-codepen"></i></a>
     </li>
   </ul>
-</div>
+</div>	
+</footer>
 
 
 <script
