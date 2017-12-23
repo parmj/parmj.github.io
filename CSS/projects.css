@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	background-color: #f7fffd;
+	background-color: #f2f2f2;
 }
 
 img {
@@ -215,7 +215,7 @@ p:last-of-type {
 /* Work Experience
 =================== */
 .work {
-	background-color: rgba(0,0,0,0.5);
+	background-color: white;
 }
 
 .work img {
@@ -248,7 +248,8 @@ p:last-of-type {
 	padding: 20px;
 	height: 300px;
 /*	border: 0.5px solid rgba(0, 255, 108,0.3)*/
-	border: 0.5px solid rgba(146, 66, 244,0.2)
+	/*border: 0.5px solid rgba(146, 66, 244,0.2)*/
+	background-color: white;
 
 }
 
@@ -344,9 +345,11 @@ section.modalWindow section.modalWrapper {
     padding: 5px;
 }
 
+
 .closeBtn:hover{
 	background-color: rgb(146, 66, 244);
-	color: white;
+/*	background-image: linear-gradient(to bottom, #A8D1FF 0%, #9242F4 100%);
+*/	color: white;
 }
 
 .hidden {
@@ -378,7 +381,8 @@ section.modalWindow section.modalWrapper {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(146, 66, 244);
+/*  background-color: rgb(146, 66, 244);*/
+  background-image: linear-gradient(to bottom, #A8D1FF 0%, #9242F4 100%);
    border-radius: 50%;
 
 }
