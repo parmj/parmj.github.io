@@ -8,6 +8,7 @@ body{
 /*	background-color: rgb(146, 66, 244);*/
 	/*background-image: linear-gradient(to bottom, #A8D1FF 0%, #9242F4 100%) ;*/
   background-image: url(../images/purple.jpg);
+    background-size: cover;
 	background-repeat: no-repeat;
 
 
