@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Projects</title>
-	<link href="CSS/projects.css" rel="stylesheet" type="text/css">
+	<link href="index.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="dropdown/nice-select.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css">
+	<link rel="icon" href="images/icon.ico">
+
 </head>
 
 <body>
@@ -28,235 +31,86 @@
 	</div>
 </section>
 
-
-<section class="portfolio">
+<div id="work-exp" >
 	<h1 >Work Experience</h1>
 
-	<div class="work">
+	<div class="work center-div">
 		<img class= "work-thumbnail" src="http://www.bctechnology.com/tmp/logos/2451041557A22145B3701B0184109CABF030432FFDD7FB73F447BB193B18DDD8.png">
 		<p> Junior QA at Pni Digital Media <br></br> Sept 2017 - Dec 2017</p>
 
 	</div>
+</div>
 
-</section>
+
 	<div style="width: 100%; height: 190px;"></div>
 
-<!-- <section class="portfolio">
-	<h1>Skill Set</h1>
-
-	<ul> 
-		<li>
-			<h3>Programming Languages</h3>
-			<ul>
-				<li>Javascript</li>
-			</ul>
-		</li>
-	</ul>
-
-</section>
-	<div style="width: 100%; height: 190px;"></div>
- -->
-
-<section class="portfolio">
-	<h1 id="test">Some of My Work</h1>
-	<form>
-		<select class="event-type-select">
-		  <option value="all">All Languages</option>
-		  <option value="python">Python/SQL</option>
-		  <option value="Java">Java</option>
-		  <option value="C">C</option>
-		  <option value="C#">C#</option>
-
-		</select>
-	</form>
-	<div style="width: 100%; height: 50px;"></div>
-
-	<!-- portfolio item 01 -->
-
-	<div class="port-item" data-eventtype="C#">
-		<img src="images/projects-thumbnail/vrGame.png" alt="portfolio item">
-		<figcaption class="port-desc">
-			<p>VR Game</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupOne">Project details</a>
-		</figcaption>
-	</div>
-	<div class="port-item" data-eventtype="Java">
-		<img src="images/projects-thumbnail/ecotrax.gif" alt="portfolio item">
-		<figcaption class="port-desc">
-			<p>Ecotrax</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupTwo">Project details</a>
-		</figcaption>
-	</div>
-
-	<div class="port-item" data-eventtype="python">
-		<img src="images/projects-thumbnail/airport_sql.png" alt="portfolio item">
-		<figcaption class="port-desc">
-			<p>Airport Simulation Database</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupThree">Project details</a>
-		</figcaption>
-	</div>
-
-	<!-- portfolio item 02 -->
-	<div class="port-item" data-eventtype="Java">
-		<img src="images/projects-thumbnail/imacMaze.png" alt="portfolio item">
-		<figcaption class="port-desc">
-			<p>Auto Generating Maze Game</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupFour">Project details</a>
-		</figcaption>
-	</div>
-
-	<!-- portfolio item 03 -->
-	<div class="port-item" data-eventtype="C">
-		<img src="images/projects-thumbnail/terminal-chat.png" alt="portfolio item" ">
-		<figcaption class="port-desc">
-			<p>Terminal Chat</p>
-			<a href="#test" class="button button-accent button-small modalButton" data-popup="popupFive">Project details</a>
-		</figcaption>
-	</div>
-
-</section>
-
-
-
- <!-- Project Popup's --> 
-<section class="modal modalWindow" id="popupOne">  
-	<section class="modalWrapper">
-		<h2>Vr Game </h2>
-		<iframe src="https://drive.google.com/file/d/0Byjtuqi4NRyZeU9tRlpZbUhMdUk/preview" style="width: 100%;"></iframe>  
-
-		<p> 
-		With the trend of VR gaming, me and my friends decided to work on a fun game that was mobile friendly. We were interested with the idea of implementing a game designed for Google cardboard. Being one of the cheapest choices of headsets it would be easily used by others.
-
-		</p>
-
-
-	<div class="gitLink">
-  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
-
-  	<a href="https://github.com" target="_blank">
-		 <div class="overlay2">
-		    <div class="text">See Code</div>
-		  </div>
-		</div>
-	</a>
-	</div>
-	
-	</section>
-	<a class="closeBtn">CLOSE (X)</a>
-</section>
-<section class="modal overlay"></section>
-
-
-
-<section class="modal modalWindow" id="popupTwo">  
-	<section class="modalWrapper">
-		<h2>Ecotrax - Android App</h2>
-		<p></p>
-
-
-
-	<div class="gitLink">
-  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
-
-  	<a href="https://github.com" target="_blank">
-		 <div class="overlay2">
-		    <div class="text">See Code</div>
-		  </div>
-		</div>
-	</a>
-	</div>
-
-	</section>
-	<a class="closeBtn">CLOSE X</a>
-</section>
-
-
-<section class="modal modalWindow" id="popupThree">  
-	<section class="modalWrapper">
-		<h2>Airport Database - SQL & Python</h2>
-		<p></p>
-	
-	<div class="gitLink">
-  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
-
-  	<a href="https://github.com" target="_blank">
-		 <div class="overlay2">
-		    <div class="text">See Code</div>
-		  </div>
-		</div>
-	</a>
-	</div>
-		
-	</section>
-	<a class="closeBtn">CLOSE X</a>
-</section>
-
-<section class="modal modalWindow" id="popupFour">  
-	<section class="modalWrapper">
-		<h2>Auto Generating Maze Game</h2>
-		<p></p>
-	
-	<div class="gitLink">
-  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
-
-  	<a href="https://github.com" target="_blank">
-		 <div class="overlay2">
-		    <div class="text">See Code</div>
-		  </div>
-		</div>
-	</a>
-	</div>
-		
-	</section>
-	<a class="closeBtn">CLOSE X</a>
-</section>
-
-<section class="modal modalWindow" id="popupFive">  
-	<section class="modalWrapper">
-		<h2>Terminal Chat</h2>
-		<p></p>
-	
-	<div class="gitLink">
-  	<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Avatar" class="image">
-
-  	<a href="https://github.com" target="_blank">
-		 <div class="overlay2">
-		    <div class="text">See Code</div>
-		  </div>
-		</div>
-	</a>
-	</div>
-		
-	</section>
-	<a class="closeBtn">CLOSE X</a>
-</section>
  <!-- END Project Popup's --> 
- 	<div style="width: 100%; height: 650px;"></div>
 
+<div id= "projects">
+	<h1>Projects</h1>
 
+	<div class = "project">
+		<img src="images/projects/quizbizz.png" alt="Avatar" class="image" >
 
+		<div class="overlay center-div">
+   			<div class="text">
+   				<h1>QUIZBIZZ</h1>
+   				<p>A real time interactive quiz game designed for classrooms</p>
 
+				<a class="ui label">React JS</a>
+				<a class="ui label">Node JS</a>
+				<a class="ui label">Socket.io</a>
+				<a class="ui label">MongoDB</a>
+				<p>&nbsp;</p>
 
+				<a href="https://github.com/parmj/QuizBizz" target="_blank">
+					<i class="fa fa-github" style="font-size:60px;color:white"></i>
+					<p style="color:white ">GitHub</p>
+				</a>
 
+   			</div>
+  		</div>	
+	</div>
 
+	<div style="width: 100%; height: 80px;"></div>
+
+<!-- https://projects.invisionapp.com/prototype/cjp1z71jl00qdhk01w08dcaxc/play -->
+	<div class = "project">
+		<img src="images/projects/reeplay.png" alt="Avatar" class="image" >
+
+		<div class="overlay center-div" style="background-color: #ff8c69">
+   			<div class="text">
+   				<h1>REEPLAY</h1>
+   				<p>A Live video review and data anylytics application for profession basketball. <br>
+   				This is UI/UX project, not currently implemented</p>
+
+				<a class="ui label">Invision Studio</a>
+				<p>&nbsp;</p>
+
+				<a href="https://projects.invisionapp.com/prototype/cjp1z71jl00qdhk01w08dcaxc/play" target="_blank">
+					<p style="color:white ">Prototype</p>
+				</a>
+   			</div>
+  		</div>	
+	</div>
+	
+</div>
 
 
 
 
 <footer>
+<div class="footer-line"></div>
 <div class="container-fluid navbar-fixed-bottom" id="contact-bar">
   <ul class="list-inline text-center">
     <li>
-      <a href="#"><i class="fa fa-envelope rotate"></i></a>
+      <a href="mailto:parmj@sfu.ca" target="_blank"><i class="fa fa-envelope rotate"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="https://github.com/parmj" target="_blank"><i class="fa fa-github"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fa fa-behance-square"></i></a>
-    </li>
-    <li>
-      <a href="#"><i class="fa fa-codepen"></i></a>
+      <a href="https://www.linkedin.com/in/parmvir-johal-456620133" target="_blank"><i class="fa fa-linkedin-square"></i></a>
     </li>
   </ul>
 </div>	
@@ -268,19 +122,9 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
-		<script src="lib/parallax.js"></script>
-		<script src="lib/popup.js"></script>
-		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-		<script src="lib/scroll.js"></script>
-		<script src="lib/filter.js"></script>
-		<script src="dropdown/jquery.nice-select.js"></script>
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-			  $('select').niceSelect();
-			});
-
-		</script>
+<script src="lib/parallax.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="lib/scroll.js"></script>
 
 
 </body>
