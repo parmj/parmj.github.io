@@ -172,12 +172,17 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
 
 .project img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 60%;
+/*  width: 60%;
+*/  position: relative;
+
 }
 
 .project {
   position: relative;
-}
+  width:60%;
+  margin: 0 auto;
+/*  padding-left: 35%;
+*/}
 
 .overlay {
   position: absolute;
@@ -186,8 +191,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
   left: 0;
   right: 0;
   height: 100%;
-  width: 60%;
-  opacity: 0;
+/*  width: 60%;
+*/  opacity: 0;
   transition: .5s ease;
   background-color: #5764f9;
 }
@@ -209,26 +214,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
 }
 
 
-/* Defines the width of the carousel and centers it on the page */
-.slick-carousel {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-/* The width of each slide */
-.slick-slide {
-  width: 350px;
-}
-
-/* Color of the arrows */
-.slick-next::before, .slick-prev::before {
-  color: blue;
-}
 /* FOOTER*/
 
 .footer-line {
-	height: 5px;
-	background-image: linear-gradient(#5764f9, purple);
+	height: 2px;
+	background-image: linear-gradient(#5764f9, black);
 	margin:30px;
 	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
