@@ -171,9 +171,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
 }
 
 .project img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*  width: 60%;
+/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*//*  width: 60%;
 */  position: relative;
+  max-height: 400px;
+
 
 }
 
@@ -181,6 +183,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
   position: relative;
   width:60%;
   margin: 0 auto;
+  max-height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 /*  padding-left: 35%;
 */}
 
