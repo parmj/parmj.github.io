@@ -10,8 +10,7 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	background-color: #fcfcfcfc;
-
+	background-color: white;
 }
 
 img {
@@ -19,10 +18,11 @@ img {
 	height: auto;
 }
 
-.center-div
+.center
 {
-     margin: 0 auto;
-     padding-left: 35%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ul {
@@ -107,28 +107,12 @@ p:last-of-type {
 
 
 .home-hero {
-/*	 background-image: url(../images/home-desk-blur.jpg); 
-*/
-/*	 background-image: url(http://www.4usky.com/data/out/39/164335511-google-wallpapers.jpg); 
-*/
-	 background-image: url(https://images5.alphacoders.com/492/492784.jpg
-); 
 
-/*	background-color: hsl(2, 57%, 40%);
-	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
-	*/
-
-
-
+	background-image: url(https://wallpaperplay.com/walls/full/b/0/6/64789.jpg); 
 	background-size: cover;
 	background-position: center;
-	padding: 10em 0;
 	color: #FFF;
-
 }
-
 
 @media (min-width: 60rem) {
 	.home-hero {
@@ -137,121 +121,47 @@ p:last-of-type {
 	}
 }
 
-/* Work Experience
-=================== */
-#work-exp h1   {
+.portrait {
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	border-radius: 50%;
+	background-color: rgb(79, 250, 131);
+} 
+   
 
-	margin-top: 50px;
-	margin-bottom: 50px; 
-}
-.work {
-
-}
-.work img {
-	width: 10%;
-	float: left;
+.title {
+	text-align: center;
 }
 
-.work p {
-	font-size: 15px;
-	float: left;
-	padding: 100px;
-	padding-top: 25px;
+/* ABOUT ME */
+.aboutme-header {
+	max-width: 700px;
 }
 
-/* 
-PROJECTS
-=================== 
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
-*/
+/* WORK TILES */
+.work-tile {
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+	width: 60%;
 
-#projects h1 {
-	margin-top: 25px;
-	margin-bottom: 25px; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.project img {
-/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-*//*  width: 60%;
-*/  position: relative;
-  max-height: 400px;
-
-
+.work-img {
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+/* .card-body.realtor {
+	background-color: rgba(250, 79, 93, 0.1);
 }
 
-.project {
-  position: relative;
-  width:60%;
-  margin: 0 auto;
-  max-height: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-/*  padding-left: 35%;
-*/}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-/*  width: 60%;
-*/  opacity: 0;
-  transition: .5s ease;
-  background-color: #5764f9;
-}
-
-.project:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width:100%;
-}
-
-
-/* FOOTER*/
-
-.footer-line {
-	height: 2px;
-	background-image: linear-gradient(#5764f9, black);
-	margin:30px;
-	border-radius: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-#contact-bar {
-    bottom: 0px;
-    width: 100%;
-}
-
-
-#contact-bar a {
-  size: 100px;
-  color: black;
-  text-decoration: none;
-}
-
-#contact-bar ul li{
-  padding:20px;
-  font-size: 200%;
-  list-style: none;
-  display: inline;
-}
-
-#contact-bar a:hover{
-  color:rgb(146, 66, 244);
-}
-
-
-
+.card-body.pni {
+	background-color: rgba(79, 119, 250, 0.1);
+} */

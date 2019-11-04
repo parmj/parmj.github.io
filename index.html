@@ -1,173 +1,154 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Projects</title>
+	<title>Parm Johal -- Portfolio</title>
 	<link href="index.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="dropdown/nice-select.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 	<link rel="icon" href="images/icon.ico">
 
 </head>
 
 <body>
+	<section class="home-hero parallax--bg">
+		<div class="container">
+			<img class="portrait" src="images/myAvatar.png" onmouseover="hover(this);" onmouseout="unhover(this);">
+			<h1 class="title parallax--box">Parm Johal
+				<span>4th Year Comp Sci Student</span>
+			</h1>
+			<div class="arrow"></div>
+		</div>
+	</section>
 
-<section class="home-hero parallax--bg">
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h1 class="display-4">Hello! 😊</h1>
+		<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+			to make a type specimen book. </p>
+	</div>
+
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Work Experience</h1>
+	</div>
+	<div class="work-tile card mb-5">
+		<img class="work-img"src="https://cdn.worldvectorlogo.com/logos/realtor-3.svg" />
+		<div class="card-body realtor">
+			<h5 class="card-title">Software Engineer Intern (Backend-Search Team)</h5>
+			<ul class="list-group pni">
+					<li class="list-group-item">&bull; Developped new features on realtor.com's search API's in Node JS. <br> 
+						The API's handled ~200k req/min and required thorough performance tests using neoload</li>
+					<li class="list-group-item">&bull; Forwarded logs from AWS lambda to splunk and created a custom splunk dashboard to monitor update logs for addresses from lisiting/property updates</li>
+					<li class="list-group-item">&bull; Automated integration test for coninous delivery through Jenkins and AWS</li>
+					<li class="list-group-item">&bull; Developped/updated integrations tests using python</li>
+			</ul>
+		</div>
+	</div>
+	<div class="work-tile card mb-5">
+			<img class="work-img"src="https://static.eluta.ca/b6/3m/employer_logo_regular_universal_en_a6acd1e867707b7c9b7c07d537024dfa.svg" />
+			<div class="card-body pni">
+				<h5 class="card-title">Junior QA Developer Intern (Costco US)</h5>
+				<ul class="list-group pni">
+					<li class="list-group-item">&bull; Designed and implemeted tests for Costcos Photo Centre website</li>
+					<li class="list-group-item">&bull; Developped automation scripts for production releases that decreased manual sanity checks</li>
+					<li class="list-group-item">&bull; Co-lead the testing team on new Photo Book Builder (One of the largest projects)</li>
+					<li class="list-group-item">&bull; Communicated with clients about requirments and demoed new features to stakeholders</li>
+				</ul>
+			</div>
+		</div>
+
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">My Skill Set</h1>
+	</div>
 	<div class="container">
-		<img src="images/vegeta.png" 
-		style="    display: block;
-	    margin: 0 auto;
-	    width: 15%;"
-
-	    ></img>
-		<h1 class="title parallax--box">Parmvir Johal <span>3rd Year Comp Sci student at SFU</span>
-		</h1>
-<!-- 		<a href="" class="button button-accent">See Our Work</a>
- -->
-		<div class="arrow"></div>
-
-	</div>
-</section>
-
-<div id="work-exp" >
-	<h1 >Work Experience</h1>
-
-	<div class="work center-div">
-		<img class= "work-thumbnail" src="http://www.bctechnology.com/tmp/logos/2451041557A22145B3701B0184109CABF030432FFDD7FB73F447BB193B18DDD8.png">
-		<p> Junior QA at Pni Digital Media <br></br> Sept 2017 - Dec 2017</p>
-
-	</div>
-</div>
-
-
-	<div style="width: 100%; height: 190px;"></div>
-
- <!-- END Project Popup's --> 
-
-<div id= "projects">
-	<h1>Projects</h1>
-
-	<div class = "project">
-		<img src="images/projects/quizbizz.png" alt="Avatar" class="image" >
-
-		<div class="overlay center-div">
-   			<div class="text">
-   				<h1>QUIZBIZZ</h1>
-   				<p>A real time interactive quiz game designed for classrooms</p>
-
-				<a class="ui label">React JS</a>
-				<a class="ui label">Node JS</a>
-				<a class="ui label">Socket.io</a>
-				<a class="ui label">MongoDB</a>
-				<p>&nbsp;</p>
-
-				<a href="https://github.com/parmj/QuizBizz" target="_blank">
-					<i class="fa fa-github" style="font-size:60px;color:white"></i>
-					<p style="color:white ">GitHub</p>
-				</a>
-
-   			</div>
-  		</div>	
+		<div class="card-deck mb-3 text-center">
+			<div class="card mb-4 box-shadow languages">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Languages</h4>
+				</div>
+				<div class="card-body">
+					<ul class="list-group mt-3 mb-4">
+						<li>Node JS</li>
+						<li>Java</li>
+						<li>C++</li>
+						<li>Python</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card mb-4 box-shadow frameworks">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Frameworks</h4>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>Express</li>
+						<li>socket.io</li>
+						<li>Spring</li>
+						<li>React</li>
+						<li>Pandas & Numpy</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card mb-4 box-shadow tools-software">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Tools/Software</h4>
+				</div>
+				<div class="card-body">
+					<ul class=" mt-3 mb-4">
+						<li>AWS</li>
+						<li>Github</li>
+						<li>Jenkins</li>
+						<li>ElasticSearch</li>
+						<li>Mac OSX & Linux</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div style="width: 100%; height: 50px;"></div>
-
-	<div class = "project" style="background-color:  #1bb276;">
-		<img src="images/projects/ecotrax.png" alt="Avatar" class="image" >
-
-		<div class="overlay center-div" style="background-color:  #1bb276">
-   			<div class="text">
-   				<h1>EcoTrax</h1>
-   				<p>This app was designed by a group of 4 students in our Software Engineering course. The project was designed to help improve and meet the eco needs of Canada. With the signing of the newest Paris acoord, it is more important than ever to help canadians keep track of their CO2 emissions. </p>
-
-				<a class="ui label">Java</a>
-				<a class="ui label">JSON</a>
-				<a class="ui label">Android Studio</a>
-				<p>&nbsp;</p>
-				<a href="https://github.com/parmj/CarbonTracker" target="_blank">
-					<i class="fa fa-github" style="font-size:60px;color:white"></i>
-					<p style="color:white ">GitHub</p>
-				</a>
-   			</div>
-
-  		</div>	
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Projects</h1>
 	</div>
+	<footer class="page-footer font-small special-color-dark pt-4">
+		<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+				<li class="list-inline-item">
+					<a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/parmvir-johal-456620133" target="_blank">
+						<i class="fab fa-linkedin-in"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-dribbble mx-1" href="https://github.com/parmj" target="_blank">
+						<i class="fab fa-github"> </i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-copyright text-center py-3">Copyright ©2019 | Parmvir Johal</div>
+	</footer>
 
-	<div style="width: 100%; height: 50px;"></div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
 
-	<div class = "project">
-		<img src="images/projects/sfudata-api.jpg" alt="Avatar" class="image" >
-
-		<div class="overlay center-div" style="background-color: #A6192E">
-   			<div class="text">
-   				<h1>SFU Data API</h1>
-   				<p>A web crawler REST API that scrapes SFU student data. Program not public because of SFU guidlines and possible miss use of data</p>
-
-				<a class="ui label">Express JS</a>
-				<a class="ui label">Selenium</a>
-				<p>&nbsp;</p>
-
-   			</div>
-  		</div>	
-	</div>
-
-	<div style="width: 100%; height: 50px;"></div>
-
-
-<!-- https://projects.invisionapp.com/prototype/cjp1z71jl00qdhk01w08dcaxc/play -->
-	<div class = "project" style="background-color:  #efefef;">
-		<img src="images/projects/reeplay.png" alt="Avatar" class="image" >
-
-		<div class="overlay center-div" style="background-color: #ff8c69">
-   			<div class="text">
-   				<h1>REEPLAY</h1>
-   				<p>A Live video review and data anylytics application for profession basketball. <br>
-   				This is UI/UX project, not currently implemented</p>
-
-				<a class="ui label">Invision Studio</a>
-				<p>&nbsp;</p>
-
-				<a href="https://projects.invisionapp.com/prototype/cjp1z71jl00qdhk01w08dcaxc/play" target="_blank">
-					<p style="color:white ">Prototype</p>
-				</a>
-   			</div>
-  		</div>	
-	</div>
-	
-</div>
-
-
-
-
-<footer>
-<div class="footer-line"></div>
-<div class="container-fluid navbar-fixed-bottom" id="contact-bar">
-  <ul class="list-inline text-center">
-    <li>
-      <a href="mailto:parmj@sfu.ca" target="_blank"><i class="fa fa-envelope rotate"></i></a>
-    </li>
-    <li>
-      <a href="https://github.com/parmj" target="_blank"><i class="fa fa-github"></i></a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/parmvir-johal-456620133" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-    </li>
-  </ul>
-</div>	
-</footer>
-
-
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-
-<script src="lib/parallax.js"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="lib/scroll.js"></script>
+	<script src="lib/parallax.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="lib/scroll.js"></script>
+	<script>
+		function hover(element) {
+			element.setAttribute('src', 'https://media.tenor.com/images/431cfabc82312445d24d37509f67a019/tenor.gif');
+		}
+		function unhover(element) {
+			element.setAttribute('src', 'images/myAvatar.png');
+		}
+	</script>
 
 
 </body>
+
 </html>
