@@ -20,9 +20,9 @@ img {
 
 .center
 {
-	display: block;
+	/* display: block;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; */
 }
 
 ul {
@@ -158,6 +158,11 @@ p:last-of-type {
 	margin-right: auto;
 	padding: 10px;
 }
+.card-body {
+	padding: 0;
+	margin: 0;
+}
+
 /* .card-body.realtor {
 	background-color: rgba(250, 79, 93, 0.1);
 }
