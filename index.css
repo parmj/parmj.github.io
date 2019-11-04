@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
-* {
-	box-sizing: border-box;
-	transition: all ease-in-out 250ms;
-}
-
-
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	background-color: white;
+	background-color: #eee	!important;
 }
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+.site-header {
+	background-color: rgba(0, 0, 0, .85);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+	color: #999;
+	transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+	color: rgb(79, 250, 131);
+	text-decoration: none;
+  }
 
 img {
 	max-width: 100%;
@@ -170,3 +181,11 @@ p:last-of-type {
 .card-body.pni {
 	background-color: rgba(79, 119, 250, 0.1);
 } */
+
+.skills {
+	background-image: url("https://wallpapercave.com/wp/wp3621175.png");
+	width: 100%;
+	padding: 50px;
+	padding-top: 100px;
+	border-radius: 35px;
+}
