@@ -31,10 +31,10 @@
 					<line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
 				</svg>
 			</a>
-			<a class="py-2 d-none d-md-inline-block" href="#">Intro</a>
-			<a class="py-2 d-none d-md-inline-block" href="#">Experience</a>
-			<a class="py-2 d-none d-md-inline-block" href="#">Skills</a>
-			<a class="py-2 d-none d-md-inline-block" href="#">Projects</a>
+			<a class="py-2 d-none d-md-inline-block" href="#intro">Intro</a>
+			<a class="py-2 d-none d-md-inline-block" href="#experience">Experience</a>
+			<a class="py-2 d-none d-md-inline-block" href="#skills">Skills</a>
+			<a class="py-2 d-none d-md-inline-block" href="#projects">Projects</a>
 		</div>
 	</nav>
 	<section class="home-hero parallax--bg">
@@ -47,14 +47,14 @@
 		</div>
 	</section>
 
-	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="intro">
 		<h1 class="display-4">Hello! 😊</h1>
 		<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
 			to make a type specimen book. </p>
 	</div>
 
-	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="experience">
 		<h1 class="display-4">Work Experience</h1>
 	</div>
 	<div class="work-tile card mb-5">
@@ -86,7 +86,7 @@
 		</div>
 	</div>
 
-	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="skills">
 		<h1 class="display-4">My Skill Set</h1>
 	</div>
 	<div class="container skills">
@@ -136,10 +136,11 @@
 		</div>
 	</div>
 
-	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-		<h1 class="display-4">Projects</h1>
+	<div class="aboutme-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="projects">
 		<a href="https://github.com/parmj" target="_blank">
-			<img src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png" style="width: 10%;">
+			<h1 class="display-4">Projects
+				<img src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png" style="width: 10%;">
+			</h1>
 		</a>
 	</div>
 
@@ -184,6 +185,7 @@
 	<script src="lib/parallax.js"></script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src="lib/scroll.js"></script>
+	<script src="lib/smooth_scroll_event.js"></script>
 	<script>
 		function hover(element) {
 			element.setAttribute('src', 'https://media.tenor.com/images/431cfabc82312445d24d37509f67a019/tenor.gif');
